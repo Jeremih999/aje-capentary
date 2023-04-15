@@ -6,6 +6,7 @@ import Categories from './component/Categories';
 import About from './component/About';
 import Footer from './component/Footer'
 import Contact from './component/Contact';
+import Testimonial from './component/Testimonial';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Categories />
       <About />
       <Contact />
+      <Testimonial />
       <Footer />
       {/* <SingleProduct /> */}
     </div>

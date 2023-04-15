@@ -28,8 +28,9 @@ nav ul{
 }
 
 body{
-  padding: 0% 7%;
+  /* padding: 0% 7%; */
   background: #f7f3e8;
+  font-family: poppins, 'Courier New';
 }
 
 .main-links{
@@ -67,6 +68,7 @@ header{
   justify-content: center; */
   gap: 3rem;
   height: 90vh;
+  padding: 0 3rem;
 }
 
 .header-img__container{
@@ -300,14 +302,15 @@ header{
   justify-content: center;
   flex-direction: column;
   box-shadow:  0px 5px 10px rgba(0, 0, 0, 0.3);
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
+  height: 100vh;
 }
 
 .about__container-grid{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 5rem 0;
+  padding: 8rem 2rem;
   gap: 5%;
 }
 
@@ -418,18 +421,31 @@ header{
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.contact__text-inner > div{
+  width: 10rem;
+  align-self: center;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: .8rem;
+}
+
 .contact__container form{
   display: flex;
   flex-direction: column;
   gap: .5rem;
 }
 
-.contact__text-inner ul{
+.contact-info{
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   gap: .8rem;
+  width: 100%;
 }
 
 .input__fields-names{
@@ -514,4 +530,63 @@ header{
 .footer-flex ul li:hover{
   letter-spacing: 0.4rem;
   font-size: 1rem;
+}
+
+
+.testimonial-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.testimonial__avatar{
+  width: 6rem;
+  height: 6rem;
+  border: .7rem solid #D27D2D;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.testimonial__list{
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.testimonial{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.testimonial__desc{
+  background: #E1C16E;
+  padding: 2rem;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.testimonial__desc::before{
+  content: "";
+  background: #E1C16E;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  left: 45%;
+  top: -1.5rem;
+  transform: rotate(45deg);
+}
+
+.testimonial__person{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .4rem;
 }

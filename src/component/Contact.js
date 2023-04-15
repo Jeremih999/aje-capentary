@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaFacebookF, FaInstagram, FaMailBulk, FaPhoneVolume, FaTwitter, FaVoicemail } from 'react-icons/fa';
+import {MdLocationCity} from "react-icons/md"
 
 const Contact = ()=>{
     return (
@@ -10,13 +12,21 @@ const Contact = ()=>{
                             <img src='./img/contact.svg' alt='an icon' />
                         </div>
                         <h1>Contact Us</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum laboriosam beatae voluptates exercitationem nesciunt maiores eaque doloribus cumque quidem repellat?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum laboriosam beatae voluptates exercitationem </p>
 
-                        <ul>
-                            <li>08115367385</li>
-                            <li>Brownjeremih9@gmail.com</li>
-                            <li>Edo State, Nigeria</li>
+                        <ul className='contact-info'>
+                            <li><FaPhoneVolume />  08115367385</li>
+                            <li><FaMailBulk /> Brown@gmail.com</li>
+                            <li><MdLocationCity /> Edo State, Nigeria</li>
+                            <li> <ul className='socials'>
+                            <li><FaFacebookF /></li>
+                            <li><FaTwitter /></li>
+                            <li><FaInstagram /></li>
+                            <li><FaPhoneVolume /></li>
+                        </ul></li>
                         </ul>
+
+                       
                     </div>
                 </div>
 
