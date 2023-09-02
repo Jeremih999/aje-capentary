@@ -4,11 +4,11 @@ const SingleProduct = ()=>{
     return (
          <div className="single-product__page">
            <div className="product-gallery">
-           <button>Go Back To Products Page</button>
-              <div className="main-img">
+               <button>Go Back To Products Page</button>
+                <div className="main-img">
                 <img src="./img/one.jpg" alt="main image" />
-              </div>
-              <div className="related-product__images">
+                </div>
+                <div className="related-product__images">
                 <div>
                     <img src="./img/one.jpg" alt="related image" />
                 </div>
@@ -21,7 +21,7 @@ const SingleProduct = ()=>{
                 <div>
                     <img src="./img/seven.jpg" alt="related image" />
                 </div>
-              </div>
+                </div>
            </div>
 
            <div className="product-details">

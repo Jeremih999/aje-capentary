@@ -1,27 +1,29 @@
 import './App.css';
-import Headers from './component/Headers';
-import SingleProduct from './component/SingleProduct';
-import NavBar from './component/navbar';
-import Categories from './component/Categories';
-import About from './component/About';
-import Footer from './component/Footer'
-import Contact from './component/Contact';
-import Testimonial from './component/Testimonial';
 
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+import SharedLayout from './component/SharedLayout';
+import Home from './pages/Home'
+import About from './pages/About';
+import CartPage from './pages/CartPage';
+import ProductsPage from './pages/ProductsPage';
+import SingleProduct from './component/SingleProduct';
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Headers />
-      <Categories />
-      <About />
-      <Contact />
-      <Testimonial />
-      <Footer />
-      {/* <SingleProduct /> */}
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path='/product-details' element={<SingleProduct />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
   );
 }
+
 
 export default App;
