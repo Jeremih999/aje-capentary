@@ -856,6 +856,9 @@ MEDIA QUERY ===920PX
   
 }
 
+
+
+
 @media only screen and (max-width: 450px){
   .main-links_active{
     top: 2rem;
@@ -867,7 +870,7 @@ MEDIA QUERY ===920PX
     flex-direction: column;
     height: 100vh;
     flex-flow: column-reverse;
-    margin-top: 35vh;
+    margin-top: 10vh;
     margin-bottom: 16rem;
   }
   .contact__container{
@@ -1023,6 +1026,17 @@ MEDIA QUERY ===920PX
   flex-direction: column;
   background: #E1C16E;
   padding: 3rem 0;
+}
+
+@media only screen and (max-width: 390px){
+  header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-flow: column-reverse;
+    margin-top: 40vh;
+    margin-bottom: 16rem;
+  }
 }
 
 @media only screen and (max-width: 920px){
